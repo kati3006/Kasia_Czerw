@@ -1,6 +1,6 @@
-package com.kodilla.calculator;
+package com.kodilla.testing.calc;
 
-class Calculator {
+public class Calc {
     public double add(double a, double b) {
         return a + b;
     }
