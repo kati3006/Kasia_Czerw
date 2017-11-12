@@ -22,7 +22,7 @@ public class CollectionTestSuite {
     }
 
     @AfterClass
-    public static void afterCl-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ass() {
+    public static void afterClass() {
         System.out.println("Test Suite: end");
     }
 
