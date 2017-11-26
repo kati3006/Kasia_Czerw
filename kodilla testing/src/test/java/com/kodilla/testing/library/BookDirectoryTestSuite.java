@@ -100,7 +100,7 @@ public class BookDirectoryTestSuite {
 
         // When
         List<Book> resultList = bookLibrary.listBooksInHandsOf(
-                new LibraryUser("Basia", "Czerw","22222"));
+                new LibraryUser("Kasia", "Czerw","1111"));
 
         // Then
         assertEquals(0, resultList.size());
@@ -116,7 +116,7 @@ public class BookDirectoryTestSuite {
 
         // When
         List<Book> resultList = bookLibrary.listBooksInHandsOf(
-                new LibraryUser("Basia", "Czerw","22222"));
+                new LibraryUser("Kasia", "Czerw","11111"));
 
         // Then
         assertEquals(5, resultList.size());
@@ -132,7 +132,7 @@ public class BookDirectoryTestSuite {
 
         // When
         List<Book> resultList = bookLibrary.listBooksInHandsOf(
-                new LibraryUser("Basia", "Czerw","22222"));
+                new LibraryUser("Kasia", "Czerw","11111"));
 
         // Then
         assertEquals(10, resultList.size());
