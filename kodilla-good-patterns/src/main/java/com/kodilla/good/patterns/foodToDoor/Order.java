@@ -1,12 +1,19 @@
 package com.kodilla.good.patterns.foodToDoor;
 
 public class Order {
-    private static Order ourInstance = new Order();
+    String product;
+    Double quantity;
 
-    public static Order getInstance() {
-        return ourInstance;
+    public Order(String product, Double quantity) {
+        this.product = product;
+        this.quantity = quantity;
     }
 
-    private Order() {
+    public String getProduct() {
+        return product;
+    }
+
+    public Double getQuantity() {
+        return quantity;
     }
 }
