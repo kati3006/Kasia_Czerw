@@ -1,7 +1,5 @@
 package com.kodilla.good.patterns.flightService;
 
-import javafx.collections.transformation.FilteredList;
-
 import java.util.ArrayList;
 import java.util.List;
 

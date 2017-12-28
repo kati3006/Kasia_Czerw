@@ -19,5 +19,4 @@ public class ForumUserTestSuite {
         String s = user.getUserName();
         Assert.assertEquals("John Smith", s);
     }
-
 }
