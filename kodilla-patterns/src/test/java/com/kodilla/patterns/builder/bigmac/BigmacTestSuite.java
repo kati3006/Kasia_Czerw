@@ -15,9 +15,11 @@ public class BigmacTestSuite {
                 .ingredient("salata")
                 .build();
 
+        //Then
         Assert.assertEquals("z sezamem", bm.getRoll());
         Assert.assertEquals(2, bm.getBurgers());
         Assert.assertEquals("hamburgerowy", bm.getSauce());
         Assert.assertEquals(3, bm.getIngredients().size());
+
     }
 }
