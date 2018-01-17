@@ -1,7 +1,5 @@
 package com.kodilla.exception.test;
 
-import java.util.stream.Stream;
-
 public class FirstChallenge {
     public double divide(double a, double b) throws ArithmeticException {
         if (b == 0) {

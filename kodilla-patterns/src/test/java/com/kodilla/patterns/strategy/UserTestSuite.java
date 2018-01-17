@@ -1,5 +1,6 @@
-package com.kodilla.patterns.strategy.social;
+package com.kodilla.patterns.strategy;
 
+import com.kodilla.patterns.strategy.social.*;
 import org.junit.Assert;
 import org.junit.Test;
 
