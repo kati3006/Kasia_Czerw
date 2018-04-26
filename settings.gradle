@@ -9,4 +9,5 @@ include 'kodilla-jdbc'
 include 'kodilla-rps'
 include 'com.kodilla.sudoku'
 include 'kodilla-sudoku'
+include 'Spring Initializr'
 
