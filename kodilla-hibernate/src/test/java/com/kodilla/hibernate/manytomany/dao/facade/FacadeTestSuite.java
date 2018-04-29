@@ -1,6 +1,7 @@
 package com.kodilla.hibernate.manytomany.dao.facade;
 
 import com.kodilla.hibernate.manytomany.Company;
+import com.kodilla.hibernate.manytomany.Employee;
 import com.kodilla.hibernate.manytomany.dao.CompanyDao;
 import com.kodilla.hibernate.manytomany.dao.EmployeeDao;
 import com.kodilla.hibernate.manytomany.facade.Facade;
@@ -54,6 +55,38 @@ public class FacadeTestSuite {
             companyDao.delete(company1Id);
             companyDao.delete(company2Id);
             companyDao.delete(company3Id);
+        } catch (Exception e) {
+            //
+        }
+    }
+
+    @Test
+    public void findEmployee() throws NotFoundException {
+        //Given
+        Employee employee1 = new Employee("John", "Smith");
+        Employee employee2 = new Employee("Stephanie", "Clarckson");
+        Employee employee3 = new Employee("Linda", "Kovalsky");
+
+        //When
+        employeeDao.save(employee1);
+        int employee1Id = employee1.getId();
+        employeeDao.save(employee2);
+        int employee2Id = employee2.getId();
+        employeeDao.save(employee3);
+        int employee3Id = employee3.getId();
+
+        List<Employee> findEmployee = facade.findEmployee("John");
+
+        //Then
+        Assert.assertNotEquals(0, employee1Id);
+        Assert.assertNotEquals(0, employee2Id);
+        Assert.assertNotEquals(0, employee3Id);
+        Assert.assertEquals(0, findEmployee.size());
+
+        try {
+            employeeDao.delete(employee1Id);
+            employeeDao.delete(employee2Id);
+            employeeDao.delete(employee3Id);
         } catch (Exception e) {
             //
         }
