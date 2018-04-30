@@ -1,6 +1,5 @@
 package com.kodilla.kodillapatterns2.facade.api;
 
-import com.kodilla.kodillapatterns2.facade.Order;
 import com.kodilla.kodillapatterns2.facade.ShopService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 
 @Service
-public final class OrderFacade {
+public class OrderFacade {
     @Autowired
     private ShopService shopService;
 
