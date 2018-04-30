@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 
 @Service
-public class OrderFacade {
+public final class OrderFacade {
     @Autowired
     private ShopService shopService;
 
